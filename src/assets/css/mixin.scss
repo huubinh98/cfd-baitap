@@ -1,0 +1,12 @@
+@mixin css3($name, $value){
+    #{$name}: $value;
+    -webkit-#{$name}: $value;
+    -moz-#{$name}: $value;
+    -o-#{$name}: $value;
+}
+
+@mixin flex($item, $content) {
+    display: flex;
+    justify-content: $content;
+    align-items: $item;
+}
